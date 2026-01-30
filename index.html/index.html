@@ -3,13 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-    <meta name="description" content="HoussemDesign - Creative agency specializing in logo design, branding, web design, and digital solutions">
+    <meta name="description" content="HoussemDesign - Creative agency specializing in logo design, branding, web design, and digital solutions. Transform your ideas into visual masterpieces.">
+    <meta name="keywords" content="logo design, branding, web design, graphic design, creative agency, digital marketing, illustration, Algeria">
+    <meta name="author" content="Houssem Bahloul">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0D0D0D">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>HoussemDesign | Creative Agency</title>
+    <title>HoussemDesign | Creative Agency - Logo Design, Branding & Web Design</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://houssemdesign.com">
+    
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="en" href="https://houssemdesign.com">
+    <link rel="alternate" hreflang="fr" href="https://houssemdesign.com/fr">
+    <link rel="alternate" hreflang="ar" href="https://houssemdesign.com/ar">
+    <link rel="alternate" hreflang="x-default" href="https://houssemdesign.com">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://houssemdesign.com">
+    <meta property="og:title" content="HoussemDesign | Creative Agency">
+    <meta property="og:description" content="Transform your ideas into visual masterpieces. Specializing in logo design, branding, web design, and creative digital solutions.">
+    <meta property="og:image" content="https://houssemdesign.com/og-image.jpg">
+    <meta property="og:site_name" content="HoussemDesign">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HoussemDesign | Creative Agency">
+    <meta name="twitter:description" content="Transform your ideas into visual masterpieces. Specializing in logo design, branding, web design, and creative digital solutions.">
+    <meta name="twitter:image" content="https://houssemdesign.com/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeBusiness",
+        "name": "HoussemDesign",
+        "description": "Creative agency specializing in logo design, branding, web design, and digital solutions",
+        "url": "https://houssemdesign.com",
+        "logo": "https://houssemdesign.com/logo.svg",
+        "image": "https://houssemdesign.com/og-image.jpg",
+        "founder": {
+            "@type": "Person",
+            "name": "Houssem Bahloul"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Algeria",
+            "addressCountry": "DZ"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "",
+            "contactType": "customer service",
+            "email": "houssembhl03@gmail.com"
+        },
+        "sameAs": [
+            "https://instagram.com/h_dine_07"
+        ],
+        "areaServed": "Worldwide",
+        "priceRange": "$"
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -147,6 +215,33 @@
 
         .nav-links a:hover::after {
             width: 100%;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: relative;
+        }
+        
+        #language-select {
+            background: var(--black);
+            color: white;
+            border: 1px solid var(--yellow);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        #language-select:hover {
+            background: var(--yellow);
+            color: var(--black);
+        }
+        
+        #language-select:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--yellow);
         }
 
         /* Hero Section */
@@ -1010,6 +1105,13 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="language-switcher">
+            <select id="language-select" aria-label="Select Language">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+                <option value="ar">AR</option>
+            </select>
+        </div>
         <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -1065,21 +1167,21 @@
         <h2 class="section-title fade-in">Our Portfolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item fade-in">
-                <img src="../002.svg" alt="Logo" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <img src="../002.svg" alt="Logo Design Project" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 <div class="portfolio-overlay">
                     <h3>Brand Identity</h3>
                     <p>Logo Design</p>
                 </div>
             </div>
             <div class="portfolio-item fade-in">
-                <img src="PROOJI.svg" alt="PROOJI" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <img src="PROOJI.svg" alt="PROOJI Web Design Project" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 <div class="portfolio-overlay">
                     <h3>Web Design</h3>
                     <p>UI/UX Projects</p>
                 </div>
             </div>
             <div class="portfolio-item fade-in">
-                <img src="../rect8.svg" alt="ART" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <img src="../rect8.svg" alt="Digital Art Illustration" style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 <div class="portfolio-overlay">
                     <h3>Illustration</h3>
                     <p>Digital Art</p>
@@ -1087,7 +1189,7 @@
             </div>
             <div class="portfolio-item fade-in">
                 <div class="mask-box">
-                    <img src="../rect9.svg" alt="ART">
+                    <img src="../rect9.svg" alt="Digital Art Illustration">
                 </div>
                 <div class="portfolio-overlay">
                     <h3>Illustration</h3>
@@ -1096,7 +1198,7 @@
             </div>
             <div class="portfolio-item fade-in">
                 <div class="mask-box">
-                    <img src="../rect10.svg" alt="Packaging">
+                    <img src="../rect10.svg" alt="Packaging Design">
                 </div>
                 <div class="portfolio-overlay">
                     <h3>Packaging</h3>
@@ -1105,7 +1207,7 @@
             </div>
             <div class="portfolio-item fade-in">
                 <div class="mask-box">
-                    <img src="../rect1é.svg" alt="Marketing">
+                    <img src="../rect1é.svg" alt="Marketing Campaign Design">
                 </div>
                 <div class="portfolio-overlay">
                     <h3>Marketing</h3>
@@ -1114,7 +1216,7 @@
             </div>
             <div class="portfolio-item fade-in">
                 <div class="mask-box">
-                    <img src="../rect12.svg" alt="Motion">
+                    <img src="../rect12.svg" alt="Motion Graphics Video Production">
                 </div>
                 <div class="portfolio-overlay">
                     <h3>Motion</h3>
@@ -1218,7 +1320,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <p class="copyright">© 2024 HoussemDesign. All rights reserved.</p>
+        <p class="copyright">© 2025 HoussemDesign. All rights reserved.</p>
     </footer>
 
     <script>
@@ -1327,7 +1429,14 @@
         }, { threshold: 0.5 });
 
         statsObserver.observe(document.querySelector('.about-stats'));
+
+        // Language Switcher (placeholder for future implementation)
+        document.getElementById('language-select').addEventListener('change', function() {
+            const lang = this.value;
+            // Future: Implement language switching logic here
+            // For now, this is a placeholder for multi-language support
+            console.log('Language selected: ' + lang);
+        });
     </script>
 </body>
 </html>
-
